@@ -45,6 +45,7 @@ img {
   background-size: cover;
   font-size: var(--main-font-size, 18px);
   color: var(--main-text-color, #000);
+  font-variation-settings: "wght" var(--font-weight-normal, 400);
 }
 
 .header {
