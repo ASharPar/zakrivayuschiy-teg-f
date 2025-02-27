@@ -64,8 +64,8 @@ img {
 
 .header_logo {
   font-family: inherit;
-  font-size: var(--header-logo-font-size);
-  font-weight: 400;
+  font-size: var(--header-logo-font-size, 65px);
+  font-weight: var(--font-weight-normal, 400);
   line-height: 65px;
   letter-spacing: 0%;
   text-align: center;
@@ -74,8 +74,8 @@ img {
 
 .header_title {
   font-family: inherit;
-  font-weight: 400;
-  font-size: var(--header-title-font-size);
+  font-weight: var(--font-weight-normal, 400);
+  font-size: var(--header-title-font-size, 23px);
   line-height: 23px;
   letter-spacing: 0%;
   text-align: center;
@@ -94,7 +94,7 @@ img {
   max-inline-size: 696px;
   max-block-size: 959px;
   border: 2px solid #000;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color, #fff);
   font-family: 'Inter', sans-serif;
   margin-block-end: 50px;
   position: relative;
@@ -106,9 +106,9 @@ img {
   transition: opacity 0.3s ease;
   width: 100%;
   height: fit-content;
-  background-color: var(--bg-color);
-  font-size: var(--main-font-size);
-  font-weight: var(--font-weight-bold);
+  background-color: var(--bg-color, #fff);
+  font-size: var(--main-font-size, 18px);
+  font-variation-settings: "wght" var(--font-weight-bold, 700);
   padding: 3px 10px;
   line-height: 21.78px;
   z-index: 2;
@@ -124,9 +124,10 @@ img {
 }
 
 .card_image_sp_1_2 {
-  filter: contrast(70%);
-  filter: brightness(160%);
-  filter: sepia(70%);
+  filter: 
+    contrast(70%),
+    brightness(160%),
+    sepia(70%);
 }
 
 .card_image_sp_2_1 {
@@ -155,8 +156,8 @@ img {
   top: 56px;
   z-index: 2;
   font-family: 'Press Start 2P', serif;
-  font-weight: var(--font-weight-bold);
-  font-size: var(--small-font-size);
+  font-variation-settings: "wght" var(--font-weight-bold, 700);
+  font-size: var(--small-font-size, 14px);
   line-height: 14px;
   text-shadow:
     1px 0 rgb(255 255 255 / 0.5),
@@ -190,8 +191,8 @@ img {
   border: 2px solid var(--border-color, #000);
   text-align: center;
   line-height: 12.6px;
-  font-size: var(--small-font-size);
-  font-weight: var(--font-weight-normal);
+  font-size: var(--small-font-size, 14px);
+  font-variation-settings: "wght" var(--font-weight-normal, 400);
   color: var(--main-text-color, #000);
   background-color: transparent;
   cursor: pointer;
@@ -253,22 +254,22 @@ img {
   opacity: 0;
 }
 
-.card__icon-button:hover .core{
+.card__icon-button:hover .core {
   fill:var(--border-color,#000);
   transition: fill 0.35s linear;
 }
 
-.card__icon-button:hover .main-body{
+.card__icon-button:hover .main-body {
   fill:var(--border-color,#000);
   transition: fill 0.3s 0.05s linear;
 }
 
-.card__icon-button:active .core{
+.card__icon-button:active .core {
   fill:var(--icon-fill, red);
   transition: fill 0.3s linear;
 }
 
-.card__icon-button:active .main-body{
+.card__icon-button:active .main-body {
   fill:var(--icon-fill, red);
   transition: fill 0.3s 0.05s linear;
 }
@@ -283,12 +284,12 @@ img {
   transition: fill 0.3s 0.05s linear;
 }
 
-.like-icon.is-liked .counter{
+.like-icon.is-liked .counter {
   fill:var(--icon-fill, red);
   transition: fill 0.3s 0.06s linear;
 }
 
-.like-icon.is-liked .heart{
+.like-icon.is-liked .heart {
   animation: heart 0.3s 0.01s ease-in;
 }
 
@@ -357,8 +358,8 @@ img {
 
 .dialog_title {
   font-family: 'Press Start 2P', serif;
-  font-weight: 400;
-  font-size: var(--header-title-font-size);
+  font-variation-settings: "wght" var(--font-weight-normal, 400);
+  font-size: var(--small-font-size, 14px);
   line-height: 21px;
   text-align: left;
   text-transform: uppercase;
