@@ -43,8 +43,8 @@ img {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  font-size: var(--main-font-size);
-  color: var(--main-text-color);
+  font-size: var(--main-font-size, 18px);
+  color: var(--main-text-color, #000);
 }
 
 .header {
@@ -96,6 +96,7 @@ img {
   border: 2px solid #000;
   background-color: var(--bg-color, #fff);
   font-family: 'Inter', sans-serif;
+  font-variation-settings: "wght" var(--font-weight-normal, 400);
   margin-block-end: 50px;
   position: relative;
 }
@@ -124,10 +125,7 @@ img {
 }
 
 .card_image_sp_1_2 {
-  filter: 
-    contrast(70%),
-    brightness(160%),
-    sepia(70%);
+  filter: contrast(70%) brightness(160%) sepia(70%);
 }
 
 .card_image_sp_2_1 {
@@ -156,7 +154,7 @@ img {
   top: 56px;
   z-index: 2;
   font-family: 'Press Start 2P', serif;
-  font-variation-settings: "wght" var(--font-weight-bold, 700);
+  font-weight: var(--font-weight-bold, 700);
   font-size: var(--small-font-size, 14px);
   line-height: 14px;
   text-shadow:
@@ -192,7 +190,7 @@ img {
   text-align: center;
   line-height: 12.6px;
   font-size: var(--small-font-size, 14px);
-  font-variation-settings: "wght" var(--font-weight-normal, 400);
+  font-weight: var(--font-weight-normal, 400);
   color: var(--main-text-color, #000);
   background-color: transparent;
   cursor: pointer;
@@ -358,7 +356,7 @@ img {
 
 .dialog_title {
   font-family: 'Press Start 2P', serif;
-  font-variation-settings: "wght" var(--font-weight-normal, 400);
+  font-weight: var(--font-weight-normal, 400);
   font-size: var(--small-font-size, 14px);
   line-height: 21px;
   text-align: left;
