@@ -1,1 +1,19 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font-size: 18px;
+    --small-font-size: 14px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --main-text-color: #000;
+    --header-logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --header-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    --bg-color: #fff;
+    --border-color: #000;
+    --label-text-color: #000;
+    --text-stroke-color: rgb (255, 255, 255, 0.5);
+    --accent-color: #000;
+    --sub-color: #fff;
+    --icon-border: #000;
+    --icon-fill: red;
+    --animation-time: 0.3s;
+}
