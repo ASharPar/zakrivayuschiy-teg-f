@@ -22,7 +22,6 @@ img {
   max-height: 100%;
   object-fit: cover;
   object-position: center;
-  outline: 2px solid var(--border-color, #000);
 }
 
 .page {
@@ -86,7 +85,6 @@ img {
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   border: 2px solid #000;
   margin-block-end: 50px;
-  overflow: hidden;
 }
 
 .card_title {
@@ -103,6 +101,9 @@ img {
 
 .card_image {
   position: relative;
+  block-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  border-top: 2px solid var(--border-color, #000);
+  border-bottom: 2px solid var(--border-color, #000);
 }
 
 .card_image_filter_hue-rotate {
@@ -194,7 +195,6 @@ img {
 .button:focus-visible {
   box-shadow:
     2px 2px #000;
-  transition: box-shadow 0.3s ease-in-out;
 }
 
 .button::before {
@@ -267,7 +267,7 @@ img {
 
 .like-icon.is-liked .core {
   fill:var(--icon-fill, red);
-  transition: fill 0.3s linear;
+  transition: fill 0.3s linear; 
 }
 
 .like-icon.is-liked .main-body {
@@ -297,7 +297,6 @@ img {
 .card__icon-button:focus-visible {
   outline: none;
   border: 2px solid var(--border-color,#000);
-  transition: border 0.3s ease-in-out;
 }
 
 .button__text {
@@ -393,6 +392,9 @@ dialog[open]::backdrop {
   .card_title {
     padding-top: 4px;
     padding-bottom: 6px;
+  }
+  .img_logo {
+    right: 13px;
   }
   .save_button {
     flex-direction: column;
